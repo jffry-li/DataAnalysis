@@ -4,12 +4,12 @@ Jeffrey Li
 November 7, 2018
 
 # Table of contents  
-[K-Nearest Neighbors](#K-Nearest-Neighbors)  
-[Logistic Regression model](#Logistic-Regression-model)  
+[K-Nearest Neighbors](#k-nearest-neighbors)  
+[Logistic Regression model](#logistic-regression-model)  
 [Decision Tree model](#decision-tree-model)  
-[Random Forest model](#Random-Forest-model)
-[Gradient Boosted Machine model.](#Gradient-Boosted-Machine-model)  
-[Extreme Gradient Boosted model.](#Extreme-Gradient-Boosted-model)  
+[Random Forest model](#random-forest-model)
+[Gradient Boosted Machine model.](#gradient-boosted-machine-model)  
+[Extreme Gradient Boosted model.](#extreme-gradient-boosted-model)  
 [Conclusion](#Conclusion)
 
 
