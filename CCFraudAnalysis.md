@@ -738,7 +738,7 @@ plot(varImp(gbm_smote))
 
 The gradient boosted machine model heavily places importance on variable V14 as it is both the only variable above 20% importance and is 100% importance.
 
-# Extreme Gradient Boosted model. {#ExtremeGradientBoostedModel}
+# Extreme Gradient Boosted model. 
 
 ``` r
 xgb_grid = expand.grid(nrounds = 500, max_depth =6, eta = 0.1, gamma = 0, colsample_bytree =1 , min_child_weight= 100, subsample =1)
