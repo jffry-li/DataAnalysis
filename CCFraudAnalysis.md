@@ -10,7 +10,7 @@ Analysis
 3. [Decision Tree model](#Decision Tree model.) 
 4. [Random Forest model](#Random Forest model.) 
 5. [Gradient Boosted Machine model.](#Gradient Boosted Machine model.) 
-6. [Extreme Gradient Boosted model.](#Extreme Gradient Boosted model.) 
+6. [Extreme Gradient Boosted model.](#Extreme Gradient Boosted model.)  
 [Conclusion](#Conclusion)
 
 
