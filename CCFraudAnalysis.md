@@ -326,7 +326,7 @@ plot(varImp(knn_smote))
 
 The KNN model has variables V14, V4, V12 ,V11, V10, V3,V2 and V9 all above 80% importance.
 
-# Logistic Regression model. {#LogisticRegressionModel)  
+# Logistic Regression model. {#LogisticRegressionModel}
 
 ``` r
 #registerDoParallel(cluster)
