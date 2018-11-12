@@ -186,7 +186,7 @@ data_cv <- trainControl(method = "cv",
                      savePredictions = T)
 ```
 
-## Using SMOTE to balance the dataset.
+### Using SMOTE to balance the dataset.
 
 ``` r
 #Making Class a factor again.
