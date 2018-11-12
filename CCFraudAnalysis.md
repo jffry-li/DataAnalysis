@@ -10,7 +10,7 @@ November 7, 2018
 [Random Forest model](#random-forest-model)
 [Gradient Boosted Machine model.](#gradient-boosted-machine-model)  
 [Extreme Gradient Boosted model.](#extreme-gradient-boosted-model)  
-[Conclusion](#Conclusion)
+[Conclusion](#conclusion)
 
 
 Setting up the required libraries.
