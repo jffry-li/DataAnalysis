@@ -136,7 +136,7 @@ corr_plot <- corrplot(cor(fraud_data[,-grep("Time", colnames(fraud_data))]), met
 
 There appear to be correlations in the "Amount" and "Class" features of the dataset.
 
-**Splitting the data into a train and test set.**
+<font size="2">**Splitting the data into a train and test set.**</font>
 
 ``` r
 set.seed(123)
