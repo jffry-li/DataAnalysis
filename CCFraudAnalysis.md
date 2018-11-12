@@ -4,7 +4,7 @@ Jeffrey Li
 November 7, 2018
 
 # Table of contents
-Analysis
+1. Analysis
     -[K-Nearest Neighbors](#K-Nearest Neighbors.)  
     -[Logistic Regression model](#Logistic Regression model.)  
     -[Decision Tree model](#Decision Tree model.)  
