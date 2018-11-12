@@ -3,6 +3,17 @@ Data Analysis on the Credit Card Fraud Detection dataset from Kaggle.
 Jeffrey Li
 November 7, 2018
 
+# Table of contents
+Analysis 
+1. [K-Nearest Neighbors](#K-Nearest%20Neighbors.)
+2. [Logistic Regression model](#Logistic%20Regression%20model.)
+3. [Decision Tree model](#Decision%20Tree%20model.)
+4. [Random Forest model](#Random%20Forest%20model.)
+5. [Gradient Boosted Machine model.](#Gradient%20Boosted%20Machine%20model.)
+6. [Extreme Gradient Boosted model.](#Extreme%20Gradient%20Boosted%20model.)
+[Conclusion][#Conclusion]
+
+
 Setting up the required libraries.
 
 ``` r
