@@ -225,7 +225,7 @@ levels(cc_train$Class) <- make.names(c(0, 1))
 ```
 
 
-# K-Nearest Neighbors. {#K-NearestNeighbors}
+# K-Nearest Neighbors.
 
 ``` r
 knn_smote_quiet <- capture.output(knn_smote <- (train(Class~., data=cc_train, method ="knn", trControl = data_cv, tuneLength = 20, metric = "ROC")))
@@ -325,7 +325,7 @@ plot(varImp(knn_smote))
 
 The KNN model has variables V14, V4, V12 ,V11, V10, V3,V2 and V9 all above 80% importance.
 
-# Logistic Regression model. {#LogisticRegressionModel}
+# Logistic Regression model.
 
 ``` r
 #registerDoParallel(cluster)
@@ -429,7 +429,7 @@ plot(varImp(log_smote))
 
 The logistic regression model has variables: V4, V14, V12 and V11 as above 80% importance to the model. It appears that the logistic regression model used a very large portion of the variables to create the model.
 
-# Decision Tree model. {#DecisionTreeModel}
+# Decision Tree model.
 
 ``` r
 registerDoParallel(cluster)
@@ -538,8 +538,7 @@ plot(varImp(tree_smote))
 
 The decision tree model has variables V12 and V17 above 80% importance. An interesting observation is that the decision tree model only considers 9 variables.
 
-# Random Forest model. {#RandomForestModel}
-
+# Random Forest model.
 ``` r
 rf_smote_quiet <- capture.output(rf_smote <- train(Class ~., data = cc_train, method = "rf", trControl = data_cv, verbose = T, metric = "ROC"))
 
@@ -636,7 +635,7 @@ plot(varImp(rf_smote))
 
 From the chart, the V14 is the only variable above 80% importance for the
 
-# Gradient Boosted Machine model. {#GradientBoostedMachineModel}
+# Gradient Boosted Machine model.
 
 ``` r
 tuneGrid <- expand.grid(interaction.depth = 3, n.trees = 500,
