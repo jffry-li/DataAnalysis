@@ -3,7 +3,7 @@ Data Analysis on the Credit Card Fraud Detection dataset from Kaggle.
 Jeffrey Li  
 November 7, 2018
 
-# Table of contents  
+# Table of Contents  
 [K-Nearest Neighbors](#k-nearest-neighbors)  
 [Logistic Regression model](#logistic-regression-model)  
 [Decision Tree model](#decision-tree-model)  
