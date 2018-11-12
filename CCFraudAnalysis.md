@@ -418,7 +418,7 @@ plot(varImp(log_smote))
 
 The logistic regression model has variables: V4, V14, V12 and V11 as above 80% importance to the model. It appears that the logistic regression model used a very large portion of the variables to create the model.
 
-# Decision Tree Model
+# Decision Tree model.
 
 ``` r
 registerDoParallel(cluster)
