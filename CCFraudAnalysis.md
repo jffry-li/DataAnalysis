@@ -109,7 +109,7 @@ class_plot <- ggplot(fraud_data, aes(x = Class, y = Amount, group = Class)) + ge
 class_plot
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](/figure-markdown_github/unnamed-chunk-5-1.png)
 
 There is a larger range in non-fraudulent transactions.
 
@@ -132,7 +132,7 @@ fraud_data$Class <- as.numeric(fraud_data$Class)
 corr_plot <- corrplot(cor(fraud_data[,-grep("Time", colnames(fraud_data))]), method = "square", type = "upper")
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](/figure-markdown_github/unnamed-chunk-7-1.png)
 
 There appear to be correlations in the "Amount" and "Class" features of the dataset.
 
@@ -225,7 +225,7 @@ knn_roc <- roc(response = class_test, predictor = knn_pred$X1, type = "response"
 plot(knn_roc, main = paste("AUC:", round(knn_roc$auc, 4)))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](/figure-markdown_github/unnamed-chunk-12-1.png)
 
 ``` r
 knn_threshold <- coords(knn_roc, "best")
@@ -289,7 +289,7 @@ knn_prc
 autoplot(knn_prc, "PRC")
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](/figure-markdown_github/unnamed-chunk-13-1.png)
 
 ``` r
 knn_pr <- attr(knn_prc, "aucs")
@@ -310,7 +310,7 @@ Using varImp() to look at the importance of variables in the model.
 plot(varImp(knn_smote))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-14-1.png)
+![](/figure-markdown_github/unnamed-chunk-14-1.png)
 
 The KNN model has variables V14, V4, V12 ,V11, V10, V3,V2 and V9 all above 80% importance.
 
@@ -331,7 +331,7 @@ log_roc <- roc(response = class_test, predictor = log_pred$X1, type = "response"
 plot(log_roc, main = paste("AUC:", round(log_roc$auc,4)))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](/figure-markdown_github/unnamed-chunk-15-1.png)
 
 ``` r
 log_threshold <- coords(log_roc, "best")
@@ -395,7 +395,7 @@ log_prc
 autoplot(log_prc, "PRC")
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-16-1.png)
+![](/figure-markdown_github/unnamed-chunk-16-1.png)
 
 ``` r
 log_pr <- attr(log_prc, "aucs")
@@ -414,7 +414,7 @@ AUC_tab <- rbind(AUC_tab, data.frame(Model = "Logistic Regression", AUC = log_AU
 plot(varImp(log_smote))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![](/figure-markdown_github/unnamed-chunk-17-1.png)
 
 The logistic regression model has variables: V4, V14, V12 and V11 as above 80% importance to the model. It appears that the logistic regression model used a very large portion of the variables to create the model.
 
@@ -431,7 +431,7 @@ registerDoSEQ()
 prp(tree_smote$finalModel)
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-18-1.png)
+![](/figure-markdown_github/unnamed-chunk-18-1.png)
 
 ``` r
 tree_predict <- predict(tree_smote$finalModel, fraud_test, type = "prob")
@@ -440,7 +440,7 @@ dec_roc <- roc(class_test, tree_predict[,"X1"], type = "response")
 plot(dec_roc, main = paste("AUC:", round(dec_roc$auc,4)))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-18-2.png)
+![](/figure-markdown_github/unnamed-chunk-18-2.png)
 
 ``` r
 dec_threshold <- coords(dec_roc, "best")[1]
@@ -504,7 +504,7 @@ dec_prc
 autoplot(dec_prc, "PRC")
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-19-1.png)
+![](/figure-markdown_github/unnamed-chunk-19-1.png)
 
 ``` r
 dec_pr <- attr(dec_prc, 'aucs')
@@ -523,7 +523,7 @@ AUC_tab <- rbind(AUC_tab, data.frame(Model = "Decision Tree", AUC = tree_AUC, AU
 plot(varImp(tree_smote))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-20-1.png)
+![](/figure-markdown_github/unnamed-chunk-20-1.png)
 
 The decision tree model has variables V12 and V17 above 80% importance. An interesting observation is that the decision tree model only considers 9 variables.
 
@@ -538,7 +538,7 @@ rf_roc <- roc(class_test, rf_pred$X1, type = "response")
 plot(rf_roc, main = paste("AUC:", round(rf_roc$auc,4)))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-21-1.png)
+![](/figure-markdown_github/unnamed-chunk-21-1.png)
 
 ``` r
 rf_threshold <- coords(rf_roc, "best")
@@ -604,7 +604,7 @@ rf_pr <- attr(rf_prc, 'aucs')
 autoplot(rf_prc, "PRC")
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-22-1.png)
+![](/figure-markdown_github/unnamed-chunk-22-1.png)
 
 ``` r
 rf_AUC <- round(rf_roc$auc,4)
@@ -621,7 +621,7 @@ AUC_tab <- rbind(AUC_tab, data.frame(Model = "Random Forest", AUC = rf_AUC, AUPR
 plot(varImp(rf_smote))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-23-1.png)
+![](/figure-markdown_github/unnamed-chunk-23-1.png)
 
 From the chart, the V14 is the only variable above 80% importance for the
 
@@ -640,7 +640,7 @@ gbm_roc <- roc(class_test, gbm_pred$X1)
 plot(gbm_roc, main = paste("AUC:", round(gbm_roc$auc,4)))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-24-1.png)
+![](/figure-markdown_github/unnamed-chunk-24-1.png)
 
 ``` r
 gbm_threshold <- coords(gbm_roc, "best")
@@ -704,7 +704,7 @@ gbm_prc
 autoplot(gbm_prc, "PRC")
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-25-1.png)
+![](/figure-markdown_github/unnamed-chunk-25-1.png)
 
 ``` r
 gbm_pr <- attr(gbm_prc, 'aucs')
@@ -724,7 +724,7 @@ AUC_tab <- rbind(AUC_tab, data.frame(Model = "Gradient Boosted Machine", AUC = g
 plot(varImp(gbm_smote))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-26-1.png)
+![](/figure-markdown_github/unnamed-chunk-26-1.png)
 
 The gradient boosted machine model heavily places importance on variable V14 as it is both the only variable above 20% importance and is 100% importance.
 
@@ -741,7 +741,7 @@ xgb_roc <- roc(class_test, xgb_pred$X1)
 plot(xgb_roc, main = paste("AUC:", round(xgb_roc$auc,4)))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-27-1.png)
+![](/figure-markdown_github/unnamed-chunk-27-1.png)
 
 ``` r
 xgb_threshold <- coords(xgb_roc, "best")
@@ -805,7 +805,7 @@ xgb_prc
 autoplot(xgb_prc, "PRC")
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-28-1.png)
+![](/figure-markdown_github/unnamed-chunk-28-1.png)
 
 ``` r
 xgb_pr <- attr(xgb_prc, 'aucs')
@@ -825,7 +825,7 @@ AUC_tab <- rbind(AUC_tab, data.frame(Model = "Extreme Gradient Boosting", AUC = 
 plot(varImp(xgb_smote))
 ```
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-29-1.png)
+![](/figure-markdown_github/unnamed-chunk-29-1.png)
 
 The extreme gradient boosted model places 100% importance on variable V14 and it is the only variable above 20% importance.
 
