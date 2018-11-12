@@ -4,13 +4,12 @@ Jeffrey Li
 November 7, 2018
 
 # Table of contents
-1. Analysis 
-    1. [K-Nearest Neighbors](#K-Nearest Neighbors.)
-    2. [Logistic Regression model](#Logistic Regression model.)
-    3. [Decision Tree model](#Decision Tree model.)
-    4. [Random Forest model](#Random Forest model.)
-    5. [Gradient Boosted Machine model.](#Gradient Boosted Machine model.)
-    6. [Extreme Gradient Boosted model.](#Extreme Gradient Boosted model.)
+[K-Nearest Neighbors](#K-Nearest Neighbors.)
+[Logistic Regression model](#Logistic Regression model.)
+[Decision Tree model](#Decision Tree model.)
+[Random Forest model](#Random Forest model.)
+[Gradient Boosted Machine model.](#Gradient Boosted Machine model.)
+[Extreme Gradient Boosted model.](#Extreme Gradient Boosted model.)
 [Conclusion](#Conclusion)
 
 
