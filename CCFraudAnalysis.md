@@ -1067,4 +1067,4 @@ The model with the best F<sub>1</sub> score is the decision tree model with a sc
 
 When considering which model was "best" at predicting fraudulent cases one must consider many factors. The cost of misclassifying that creates both false negatives and false positives might factor into choosing the model. In a real world application, one might prefer the model which minimizes the cost or the model which maximizes the sensitivity and specificity.
 
-In our analysis of the data the decision tree model was the best in precision, specificity and F1 score while still maintaining a decent recall/sensitvity.
+In our analysis of the data the decision tree model was the best in precision, specificity and F1 score while still maintaining a decent recall/sensitivity.
