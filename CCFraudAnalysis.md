@@ -1028,7 +1028,7 @@ Precision = 101/(1618 + 101) = 0.0588 or 5.88%. Recall = 101/(10+101) = 0.9099 o
 
 The AUPRC takes both precision and recall and plots them against each other and calculates the area under it. The best model for AUPRC is the Random Forest.
 
-![](CCFraudAnalysis_files/figure-markdown_github/unnamed-chunk-32-1.png)
+![](/figure-markdown_github/unnamed-chunk-32-1.png)
 
 However it is not the model that has the best precision or best recall. The decision tree model has by far the best precision:
 
