@@ -841,7 +841,7 @@ The extreme gradient boosted model places 100% importance on variable V14 and it
 
 # Conclusion
 
-Due to the dataset being unbalanced we had to utilize Synthetic Minority Oversampling Technique (SMOTE) in unorder to balance the dataset. We set up the trainControl() function which will control the nuances of the train() function and allow us to Cross Validate our training set.
+Due to the dataset being unbalanced we had to utilize Synthetic Minority Oversampling Technique (SMOTE) in order to balance the dataset. We set up the trainControl() function which will control the nuances of the train() function and allow us to Cross Validate our training set.
 
 We utilized various models to predict the class of each sample:
 <table class="table" style="margin-left: auto; margin-right: auto;">
