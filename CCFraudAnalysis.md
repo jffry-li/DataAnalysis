@@ -8,8 +8,8 @@ November 7, 2018
 [Logistic Regression model](#logistic-regression-model)  
 [Decision Tree model](#decision-tree-model)  
 [Random Forest model](#random-forest-model)  
-[Gradient Boosted Machine model.](#gradient-boosted-machine-model)  
-[Extreme Gradient Boosted model.](#extreme-gradient-boosted-model)  
+[Gradient Boosted Machine model](#gradient-boosted-machine-model)  
+[Extreme Gradient Boosted model](#extreme-gradient-boosted-model)  
 [Conclusion](#conclusion)
 
 
