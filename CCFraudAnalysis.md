@@ -1048,9 +1048,9 @@ The gradient boosted machine model has the best recall/specificity.
     ##          0 54918    11
     ##          1  1932   100
 
-Recall/Sensitivity = 104/(104+7) = 0.9369 or 93.69%.
+Recall/Sensitivity = 100/(100+11) = 0.9009 or 90.09%.
 
-The model predicted 3932 as fraudulent and of those 3932, only 104 of those were fraudulent cases. However in this case, recall/sensitivity is a measured of the number of actual predicted fraudulent cases over the total number of fraudulent cases. Therefore out of the 111 fraudulent cases in the test/validation dataset, the model was able to predict 104 of the 111 fraudulent cases. While this model was able to predict the largest number of fraudulent cases, it incorrectly identified 3828 non-fraudulent cases as fraudulent which gives the model a very poor precision.
+The model predicted 2032 as fraudulent and of those 2032, only 100 of those were fraudulent cases. However in this case, recall/sensitivity is a measured of the number of actual predicted fraudulent cases over the total number of fraudulent cases. Therefore out of the 111 fraudulent cases in the test/validation dataset, the model was able to predict 104 of the 111 fraudulent cases. While this model was able to predict the largest number of fraudulent cases, it incorrectly identified 3828 non-fraudulent cases as fraudulent which gives the model a very poor precision.
 
 Another metric related to sensitivity that can be used to test model accuracy is specificity. Specificity, in our example, is the measure of the number of non-fraudulent cases correctly identified as non-fraudulent. The decision tree model has the best specificity with 99.97%, this model nearly correctly classifies all of the non-fraudulent cases correctly as non-fraud.
 
